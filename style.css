@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+html {
+  overflow: none;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 100px; */
+  /* margin-top: -77px; */
+  object-fit: fill;
+}
+
+.carousel-inner {
+  margin-top: -77px;
+}
+
+.carousel-inner:hover {
+  border-radius: 10px;
+  background: #62eab6;
+  box-shadow: 21px 21px 42px #53c79b,
+    -21px -21px 42px #71ffd1;
+}
+
+.slide {
+  width: 40vh;
+  height: 40vh;
+}
+
+.text {
+  min-width: 150px;
+  height: 100px;
+  font-family: "Satisfy", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+  margin: 0px auto;
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
+
+.emoticons {
+  font-size: 3rem;
+  margin: 0px auto;
+  position: absolute;
+  top: 90%;
+  left: 38%;
+}
+
+
+.generate:before {
+
+  content: '';
+  animation: funText 8s infinite;
+  transition: ease-in;
+
+}
+
+@keyframes funText {
+
+  0% {
+    content: 'bro';
+  }
+
+  20% {
+    content: 'yogi';
+  }
+
+  40% {
+    content: 'Topper';
+  }
+
+  60% {
+    content: '🧡💛🧡';
+  }
+
+  80% {
+    content: 'Small Bank';
+  }
+
+  100% {
+    content: 'yogeshwar';
+  }
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+  .text {
+    min-width: 150px;
+    height: 100px;
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px auto;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+  }
+
+  .emoticons {
+    font-size: 2rem;
+    margin: 0px auto;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+  }
+}
